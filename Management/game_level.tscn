@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw341t4orke0h"]
+
+[ext_resource type="PackedScene" uid="uid://bkaip0k1t2hvp" path="res://terrain_manager.tscn" id="1_8so7q"]
+[ext_resource type="PackedScene" uid="uid://m00jrjiynkxa" path="res://Characters/Yellow Units/Warrior/warrior.tscn" id="2_debnr"]
+
+[node name="GameLevel" type="Node2D"]
+
+[node name="TerrainManager" parent="." instance=ExtResource("1_8so7q")]
+
+[node name="Warrior" parent="TerrainManager" instance=ExtResource("2_debnr")]
+
+[node name="Warrior" parent="." instance=ExtResource("2_debnr")]
+top_level = true
+z_index = 1
+position = Vector2(400, 260)
